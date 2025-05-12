@@ -1,0 +1,18 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 75px;
+}
+
+.a{
+    background-color: blue;
+}
+.b{
+    background-color: red;
+}
+.c{
+    background-color: green;
+}
+.d{
+    background-color: orange;
+}
