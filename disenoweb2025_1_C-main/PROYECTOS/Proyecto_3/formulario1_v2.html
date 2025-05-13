@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/encuesta.css">
+    <title>Encuesta de Cine</title>
+</head>
+<body>
+    <div id="Contenedor" style="width: 500px;">
+        <h2>Encuesta de Cine:</h2>
+        <form id="formulario1" name="formulario1" method="post" action="data.php">
+            <fieldset id="datos_personales">
+                <legend>Datos Personales</legend>
+                <label for="nombre"><img src="img/usuario.png" alt="Nombre Icon" 
+                    style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                    Nombre</label><br>
+                <input type="text" name="nombre" id="nombre"><br>
+                
+                <label for="apellidos"><img src="img/apellidos.png" alt="Apellidos Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                    Apellidos</label><br>
+                <input type="text" name="apellidos" id="apellidos"><br>
+                
+                <label for="dni"><img src="img/identificacion.png" alt="DNI Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                    DNI</label><br>
+                <input type="text" name="dni" id="dni" maxlength="9"><br>
+                
+                <label for="edad"><img src="img/edad.png" alt="Edad Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                    Edad</label><br>
+                <input type="number" name="edad" id="edad"><br>
+                
+                <label for="email"><img src="img/correo.png" alt="Email Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                    Email</label><br>
+                <input type="email" name="email" id="email"><br>
+                
+                <label for="sexo"><img src="img/genero.png" alt="Sexo Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                    Sexo</label><br>
+                <select name="sexo" id="sexo">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select><br>
+            </fieldset>
+
+            <fieldset id="mejor_pelicula">
+                <legend>Mejor Película</legend>
+                <input type="radio" name="mejor_pelicula" value="Pelicula01">
+                <label for="pelicula_1">Duro de matar</label> <br>
+                
+                <input type="radio" name="mejor_pelicula" value="Pelicula02">
+                <label for="pelicula_2">El conjuro  </label> <br>
+                
+                <input type="radio" name="mejor_pelicula" value="Pelicula03">
+                <label for="pelicula_3">Avengers: Endgame</label> <br>
+                
+            </fieldset>
+            <fieldset id="pelicula_no_vista">
+                <legend>Selecciona la película que no has visto</legend>
+                <input type="checkbox" name="no_vista[]" value="Pelicula01">
+                <label for="pelicula_4">The Life List</label> <br>
+                
+                <input type="checkbox" name="no_vista[]" value="Pelicula02">
+                <label for="pelicula_5">El habitante</label> <br>
+                
+                <input type="checkbox" name="no_vista[]" value="Pelicula03">
+                <label for="pelicula_6">Cónclave</label> <br>
+                
+                <input type="checkbox" name="no_vista[]" value="Pelicula04">
+                <label for="pelicula_7">El capitan américa</label> <br>
+                
+                <input type="checkbox" name="no_vista[]" value="Pelicula05">
+                <label for="pelicula_8">Los dos papas</label> <br>
+            </fieldset>
+
+            <fieldset id="opinion">
+                <legend>Opinión sobre la película que más te gustó</legend>
+                <textarea name="opinion" id="opinion" rows="5" cols="50"></textarea><br>
+            </fieldset>
+
+            <br>
+            <div id="botones">
+                <input type="reset" class="btn" value="Nuevo">
+                <input type="submit" class="btn" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
