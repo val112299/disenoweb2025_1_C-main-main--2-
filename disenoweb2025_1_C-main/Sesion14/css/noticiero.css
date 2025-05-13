@@ -1,0 +1,57 @@
+/* Reset y estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #D32F2F; /* Rojo */
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    color: white;
+    font-size: 36px;
+}
+
+main {
+    margin: 20px;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.noticia h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.noticia p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer p {
+    color: #666;
+}

@@ -1,34 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio Formularios</title>
+    <title>Encuesta de Cine: Nominadas al Oscar</title>
 </head>
 <body>
-    <div id="Contenedor" style="width: 500px;"></div>
-        <h2> Titulo de su formulario en la pagina web</h2>
+    <div class="form-container">
+        <h1>Encuesta de Cine: Nominadas al Oscar [AÑO]</h1>
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
 
-        <from id="formulario1" name="formulario1" method="post" action="data.php"></from>
-            <fieldset id="datos personales">
-                <legend> Datos Personales</legend>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
 
-                <label for="Nombre">Nombre</label> <br>
-                <input type="text" name="nombre" id="nombre"> <br>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
 
-                <label for="Apellidos">Apellidos</label> <br>
-                <input type="text" name="Apellidos" id="Apellidos"  maxlength="20"> <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-                <label for="dni"> DNI</label> <br>
-                <input type="text" name="dni" id="dni" maxlength="9"> <br>
-                
-            </fieldset>
-                <label for="miEtiqueta">Etiqueta</label><br>
-                <select id="miEtiqueta" name="miEtiqueta">
-                  <option value="X" selected="selected">...</option>
-                  <option value="A">Opcion01</option>
-                  <option value="B">Opcion02</option>
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
                 </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mejor película</legend>
+                <label><input type="radio" name="mejor_pelicula" value="pelicula_1" required> Película 01</label><br>
+                <label><input type="radio" name="mejor_pelicula" value="pelicula_2"> Película 02</label><br>
+                <label><input type="radio" name="mejor_pelicula" value="pelicula_3"> Película 03</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Selecciona película que no has visto</legend>
+                <label><input type="checkbox" name="no_visto" value="pelicula_1"> Película 01</label><br>
+                <label><input type="checkbox" name="no_visto" value="pelicula_2"> Película 02</label><br>
+                <label><input type="checkbox" name="no_visto" value="pelicula_3"> Película 03</label><br>
+                <label><input type="checkbox" name="no_visto" value="pelicula_4"> Película 04</label><br>
+                <label><input type="checkbox" name="no_visto" value="pelicula_5"> Película 05</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Opinión sobre la película que más te gustó</legend>
+                <textarea name="opiniones" rows="4" required></textarea>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="reset">Nuevo</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
