@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inicio de Sesión</title>
+    <link rel="stylesheet" href="css/iniciarsesio.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Bienvenido</h2>
+            <p>Para poder formar parte de nuestra humilde organización por favor inicie sesión con sus datos</p>
+            <button class="btn">Iniciar sesión</button>
+        </div>
+
+        <div class="register-box">
+            <h2>Nuevo Usuario</h2>
+            <p>Registrarse con:</p>
+            <button class="btn facebook">Registro con Facebook</button>
+            <button class="btn google">Registro con Google</button>
+
+            <p>O registrarse con:</p>
+            <form>
+                <input type="text" placeholder="Nombres" required>
+                <input type="text" placeholder="Apellidos" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+
+                <label>
+                    <input type="checkbox"> Al crear esta cuenta, aceptas nuestros <a href="#">términos & condiciones</a>.
+                </label>
+
+                <button class="btn">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

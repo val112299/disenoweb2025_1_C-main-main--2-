@@ -1,0 +1,127 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Fondo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
+    gap: 20px;
+}
+
+.login-box, .register-box {
+    background-color: #ffcc00; /* Fondo amarillo brillante */
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ff5722; /* Color naranja brillante */
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Texto oscuro para contraste */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #00bcd4; /* Azul vibrante */
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0097a7; /* Azul más oscuro al pasar el ratón */
+}
+
+button.facebook {
+    background-color: #3b5998; /* Color de Facebook */
+}
+
+button.facebook:hover {
+    background-color: #2d4373; /* Azul oscuro de Facebook */
+}
+
+button.google {
+    background-color: #db4437; /* Rojo de Google */
+}
+
+button.google:hover {
+    background-color: #c1351d; /* Rojo más oscuro de Google */
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 2px solid #00bcd4; /* Borde azul vibrante */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #ff5722; /* Borde naranja brillante cuando está en foco */
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+a {
+    color: #ff5722; /* Naranja brillante para los enlaces */
+}
+
+a:hover {
+    color: #e64a19; /* Naranja más oscuro */
+}
+
+@media screen and (max-width: 770px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-box, .register-box {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 13px;
+    }
+}
