@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/agendaV3.css">
+  <title>Agenda V3</title>
+</head>
+<body>
+  <div class="contenedor">
+    <header>
+      <h1>Agenda de Contactos</h1>
+    </header>
+    <main>
+      <form class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Nombre completo" required>
+
+        <label for="movil">Celular:</label>
+        <input type="tel" id="movil" placeholder="Número móvil" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+      </form>
+
+      <div class="botones">
+        <button id="guardarBtn" type="button">Guardar</button>
+        <button id="buscarBtn" type="button">Buscar</button>
+        <button id="eliminarBtn" type="button">Eliminar</button>
+        <button id="eliminarTodoBtn" type="button">Eliminar todos</button>
+      </div>
+
+      <section class="lista-contactos">
+        <div class="titulos">
+          <span>Nombre</span>
+          <span>Celular</span>
+          <span>Email</span>
+        </div>
+        <ul id="contactos"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/agendaV3.js"></script>
+</body>
+</html>
