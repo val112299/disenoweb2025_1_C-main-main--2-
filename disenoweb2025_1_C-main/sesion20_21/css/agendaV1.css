@@ -1,0 +1,30 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+input {
+    display: block;
+    margin: 10px;
+}
+
+.formulario {
+    background-color: rgb(229, 229, 229);
+}
+
+.contactos {
+    background-color: blanchedalmond;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin: 0px;
+}
+
+.formulario,
+.contactos {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+}
