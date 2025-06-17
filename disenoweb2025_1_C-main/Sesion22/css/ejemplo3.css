@@ -1,0 +1,19 @@
+div:hover{
+    background-color: yellow;
+}
+p:hover{
+    background-color: aqua;
+}
+
+/*Solo para selectores <a>*/
+
+a:focus{
+    color: greenyellow;
+}
+a:hover{
+    background-color: black;
+    color: white;
+}
+a:active{
+    color: hotpink;
+}

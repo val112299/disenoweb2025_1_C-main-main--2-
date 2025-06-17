@@ -1,0 +1,60 @@
+.corazon {
+    top: 50%;
+    /* Lo posiciona verticalmente al 50% del contenedor padre */
+    left: 50%;
+    /* Lo posiciona horizontalmente al 50% del contenedor padre */
+    transform: translate(-50%, -30%) rotate(-45deg);
+    /* Mueve el elemento hacia arriba y a la izquierda y lo rota -45° para formar la base del corazón */
+    background-color: red;
+    /* Color de fondo rojo */
+    width: 200px;
+    /* Ancho del cuadro base del corazón */
+    height: 200px;
+    /* Alto del cuadro base del corazón */
+    position: absolute;
+    /* Posicionamiento absoluto respecto al contenedor padre */
+}
+
+.banda {
+    position: absolute;
+    /* Posicionamiento absoluto dentro del corazón */
+    width: 170%;
+    /* Ancho superior al del corazón para atravesarlo completamente */
+    height: 15%;
+    /* Altura de la banda (delgada) */
+    background-color: white;
+    /* Color blanco para simular una franja */
+    top: 35%;
+    /* Se posiciona desde la parte superior del corazón */
+    left: -10%;
+    /* Desfase hacia la izquierda para que la franja sobresalga por los lados */
+    z-index: 1;
+    /* Se coloca por encima de la base del corazón */
+}
+
+
+.corazon::before,
+.corazon::after {
+    content: '';
+    /* Necesario para mostrar los pseudo-elementos */
+    position: absolute;
+    /* Posicionamiento absoluto respecto al corazón */
+    width: 100%;
+    /* Igual ancho que el corazón base */
+    height: 100%;
+    /* Igual alto que el corazón base */
+    background-color: red;
+    /* Mismo color rojo que el corazón */
+    border-radius: 50%;
+    /* Les da forma circular para simular los lóbulos superiores del corazón */
+}
+
+.corazon::before {
+    left: 50%;
+    /* Lo desplaza hacia la derecha dentro del corazón */
+}
+    
+.corazon::after {
+    top: -50%;
+    /* Lo desplaza hacia arriba para alinearlo sobre el corazón */
+}
