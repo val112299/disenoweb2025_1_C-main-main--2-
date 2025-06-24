@@ -1,0 +1,213 @@
+/* Reset de márgenes y padding */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+header {
+    background-color: #0090ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+header .company-name {
+    font-size: 2.5em;  /* Ajusta el tamaño del texto */
+    color: white;
+    font-weight: bold;
+}
+
+header .socials {
+    display: flex;
+}
+
+header .socials a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+header .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header .search-bar input {
+    padding: 10px;
+    width: 60%;
+    margin: 0 10px;
+}
+
+header .search-bar button {
+    padding: 10px 20px;
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #002f6c;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Portada */
+.portada {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.portada-img {
+    width: 55%;
+    height: auto;
+}
+
+/* Sección de servicios */
+.services {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+.service {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    background-color: #0090ff;
+    margin: 10px;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Productos */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.product {
+    width: 22%;
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #0090ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #002f6c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #ff7f00;
+    text-decoration: none;
+}
+
+/* Estilos para hacer la página responsiva */
+@media(max-width: 768px) {
+    header .search-bar input {
+        width: 70%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .service {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .product {
+        width: 48%;
+    }
+
+    .products {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 480px) {
+    header .search-bar input {
+        width: 60%;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+/* Estilos para laptop y pantallas grandes */
+@media(min-width: 992px) {
+    .service {
+        width: 22%;
+    }
+
+    .product {
+        width: 22%;
+    }
+
+    .products {
+        justify-content: space-between;
+    }
+}
